@@ -1,63 +1,95 @@
-body {
-	background-image: url('https://cdn.discordapp.com/attachments/1005620184024895509/1079261216968548403/tobi_33_imagine_the_famous_Tower_of_Babel_as_described_in_the_O_f3fb995f-1bd9-4007-b122-060d54ce80d8.png');
-	background-repeat: no-repeat;
+/* Global styles */
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	background-image: url("image.png");
 	background-size: cover;
-	height: 100vh;
-	overflow: hidden;
-	font-family: "Gothic Beltanira Signature", sans-serif;
-}
-
-main {
-	height: calc(100vh - 100px);
-	overflow: auto;
-	padding: 1em;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #990808;
-}
-
-header {
-	background-color: rgba(136, 18, 18, 0.212);
-	padding: 1em;
-}
-
-h1 {
-	color: rgb(123, 255, 0);
-	font-size: 3em;
-	text-align: center;
-	margin: 0;
-}
-
-
-nav ul {
+	background-position: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,serif ;
+	color: #fff;
+	margin: 20px;
+  }
+  
+  /* Header styles */
+  header {
+	background-color: rgba(0, 0, 0, 0.356);
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+  }
+  
+  nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: space-around;
-}
-
-nav a {
-	color: white;
+  }
+  
+  nav ul li {
+	margin-right: 20px;
+  }
+  
+  nav ul li a {
+	color: #fff;
 	text-decoration: none;
-	font-size: 1em;
-}
+	font-weight: bold;
+  }
+  
+  /* Main content styles */
+  main {
+	margin-top: 5px;
+  }
+  
+  section {
+	padding: 5px;
+	margin-bottom: 20px;
+  }
+  
+  h1 {
+	font-size: 100px;
+	margin: 50px;
+	text-align:center;
+  }
+  
+  h2 {
+	font-size: 36px;
+  }
+  
+  p {
+	font-size: 24px;
+	margin: 0;
+  }
+  
+  /* Footer styles */
+  footer {
+	background-color:rgba(0, 0, 0, 0.356);
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  footer p {
+	font-size: 14px;
+	color: #666;
+	margin: 0;
+  }
+  
+  footer a {
+	color: #ffe600;
+	text-decoration:none;
+  }
+  
+  footer a:hover {
+	color: #000;
+  }
+  
+  footer span {
+	font-weight: bold;
+  }
+  
+  
+  
