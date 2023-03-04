@@ -8,6 +8,7 @@
 .header{
   
   background-image: url(babel.png);
+  font-size: medium;
 
 }
 .w3-bar-item img {
@@ -61,14 +62,21 @@
 }
 .hero-title{
    /* padding-top:80px; */
-   font-weight: 800;
+  font-weight: 800;
+  margin: auto;
   text-transform: uppercase;
   font-size: 80px;
   color:orange;
-  
+
   text-align: center;
 
 }
+.bo-bo{
+  
+  margin:auto;
+  
+}
+
 .social{
   width:100%;
 }
@@ -89,6 +97,10 @@ main{
   text-align: center;
   text-transform: uppercase;
   
+}
+h1{
+  text-align: center;
+  margin: auto;
 }
 
 
@@ -112,6 +124,13 @@ h3{
 h4{
   font-size: 23px;
   width: 200;
+  font-weight: bolder;
+}
+h5{
+  font-size: 23px;
+  width: 200;
+  font-weight: bolder;
+  text-align:center;
 }
 
 .games{
@@ -145,7 +164,7 @@ h4{
   margin-top: 50px;
 }
 .game-store{
-  margin-top: 20px !important;
+margin-top: 20px !important;
 display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
@@ -184,16 +203,20 @@ flex-direction: column;
 } 
 h4{
   color:white;
-  font-weight: 700;
+  font-weight: bolder;
 }
 .event-hero{
   display: flex;
   flex-wrap: wrap;
-  background: rgba(255, 75, 255, 0.1);
+  margin: auto;
+  background-image: url(throne1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
   justify-content: space-evenly;
   align-items: center;
   padding:50px;
-  margin-top: 50px;
+  margin-top: auto;
   border:1px solid black;
   border-radius: 10px;
   
@@ -206,11 +229,13 @@ h4{
 .event-title{
   font-size: 40px;
   text-transform: uppercase;
+  color: orange;
 
   font-weight: 600;
   
 
 }
+
 .event-image{
   width:400px;
   height: 500px;
@@ -220,9 +245,51 @@ h4{
   height: 100%;
   object-fit: contain;
 }
-.event-text p{
-  color: white;
+.event-text {
+  color: #fff;
+  display: flex;
+  font-size:large;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: #ffffff5e;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+
 .contact{
   
   
@@ -280,16 +347,18 @@ padding: 0;
 /*Large screens - Desktop*/
 @media screen and (max-width: 1500px) {
   .hero{
-      height: 550px !important;;
+      height: 600px !important;;
       background-image: url("babel.png");
   }
-  .hero-description{
-      height: 550px
+
   }
   .hero-title{
       font-size:50px;
+      margin:auto;
+      
+
   }
-}
+
 
 /*medium screens - Laptops*/
 @media screen and (max-width: 1024px) {
@@ -347,6 +416,7 @@ padding: 0;
 
   }
   .event-hero{
+      background-image:url(throne1.png) ;
       width: 80% ;
       margin: auto;
   }
